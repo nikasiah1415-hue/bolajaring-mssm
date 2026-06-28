@@ -1,0 +1,410 @@
+/* ==========================================
+   PORTAL RASMI BOLA JARING MSSM
+   style.css
+========================================== */
+
+/* ---------- BODY ---------- */
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background-color:#F8F3EC;
+    color:#333333;
+}
+
+/* ---------- HEADER ---------- */
+
+header{
+    background:#7B1E3A;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* ---------- LOGO / TITLE ---------- */
+
+header h1{
+    margin:0;
+    font-size:50px;
+}
+
+/* ---------- NAVIGATION ---------- */
+
+nav{
+    margin-top:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-size:20px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#F29BC1;
+}
+
+/* ---------- HERO ---------- */
+
+.hero{
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero h2{
+    font-size:55px;
+    color:#7B1E3A;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:26px;
+    margin-bottom:40px;
+}
+
+/* ---------- BUTTON ---------- */
+
+.btn{
+    display:inline-block;
+    background:#D86C9B;
+    color:white;
+    padding:15px 40px;
+    border-radius:30px;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#7B1E3A;
+}
+
+/* ---------- MAIN ---------- */
+
+main{
+    text-align:center;
+    padding:70px 30px;
+}
+
+main h2{
+    font-size:50px;
+    color:#7B1E3A;
+    margin-bottom:20px;
+}
+
+main p{
+    font-size:24px;
+    line-height:1.8;
+    max-width:1000px;
+    margin:auto;
+}
+
+/* ==========================================
+   TOURNAMENT CARD
+========================================== */
+
+.tournament-card{
+    width:320px;
+    background:white;
+    margin:30px auto;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.tournament-card:hover{
+    transform:translateY(-8px);
+}
+
+.tournament-card h3{
+    color:#7B1E3A;
+    margin-bottom:15px;
+    font-size:30px;
+}
+
+.tournament-card p{
+    margin:10px 0;
+    font-size:20px;
+}
+
+.tournament-card a{
+    display:inline-block;
+    margin-top:20px;
+    background:#D86C9B;
+    color:white;
+    padding:12px 35px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.tournament-card a:hover{
+    background:#7B1E3A;
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+    background:#7B1E3A;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:80px;
+}
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width:768px){
+
+header h1{
+    font-size:36px;
+}
+
+nav a{
+    display:block;
+    margin:12px 0;
+}
+
+.hero h2{
+    font-size:38px;
+}
+
+main h2{
+    font-size:36px;
+}
+
+.tournament-card{
+    width:350px;
+    padding:35px;
+}
+}
+
+}.live-status{
+    color:red;
+    font-weight:bold;
+}
+/* LIVE STREAMING */
+
+.cards{
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+margin-top:40px;
+
+}.photo-gallery{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:20px;
+
+padding:40px;
+
+}
+
+.photo-gallery img{
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+
+border-radius:15px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+transition:.3s;
+
+cursor:pointer;
+
+}
+
+.photo-gallery img:hover{
+
+transform:scale(1.05);
+
+}/*=====================
+LIGHTBOX
+======================*/
+
+.lightbox{
+
+display:none;
+
+position:fixed;
+
+left:0;
+
+top:0;
+
+width:100%;
+
+height:100%;
+
+background:rgba(0,0,0,.9);
+
+justify-content:center;
+
+align-items:center;
+
+z-index:9999;
+
+}
+
+.lightbox-content{
+
+max-width:90%;
+
+max-height:90%;
+
+border-radius:12px;
+
+}
+
+.close{
+
+position:absolute;
+
+top:25px;
+
+right:40px;
+
+color:white;
+
+font-size:50px;
+
+cursor:pointer;
+
+}
+
+.prev{
+
+position:absolute;
+
+left:25px;
+
+font-size:60px;
+
+color:white;
+
+cursor:pointer;
+
+user-select:none;
+
+}
+
+.next{
+
+position:absolute;
+
+right:25px;
+
+font-size:60px;
+
+color:white;
+
+cursor:pointer;
+
+user-select:none;
+
+}
+
+.gallery-video{
+
+width:300px;
+
+border-radius:15px;
+
+box-shadow:0 5px 20px rgba(0,0,0,.2);
+
+}/*==========================
+   GALLERY STATISTICS
+==========================*/
+
+.gallery-stats{
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:25px;
+
+margin:40px 0;
+
+}
+
+.stat-box{
+
+background:white;
+
+width:180px;
+
+padding:25px;
+
+border-radius:18px;
+
+box-shadow:0 6px 18px rgba(0,0,0,.15);
+
+text-align:center;
+
+transition:.3s;
+
+}
+
+.stat-box:hover{
+
+transform:translateY(-8px);
+
+}
+
+.stat-icon{
+
+font-size:38px;
+
+display:block;
+
+margin-bottom:10px;
+
+}
+
+.stat-box h3{
+
+margin:5px 0;
+
+font-size:34px;
+
+color:#7B1E3A;
+
+}
+
+.stat-box p{
+
+margin:0;
+
+font-size:18px;
+
+color:#666;
+
+}
+
+
